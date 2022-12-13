@@ -9,6 +9,8 @@ from concurrent import futures
 
 
 class InventoryService(inventory_pb2_grpc.InventoryServiceServicer):
+    # When create book is called, the data is stored in the dictionary data
+    # A message indicating creation success will be returned
     def CreateBook(self, request, context):
         title = request.title
         author = request.author
