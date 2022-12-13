@@ -1,6 +1,9 @@
 import grpc
-import inventory_pb2 
+import sys
+sys.path.insert(0, '/Users/yuyanghuang/Desktop/API design/inventory/service')
 import inventory_pb2_grpc
+import inventory_pb2
+
 
 class InventoryClient(object):
     def __init__(self):
@@ -19,7 +22,5 @@ class InventoryClient(object):
 
 if __name__ == "__main__":
     client = InventoryClient()
-    print(client.GetBook("3"))
     Book = {"title": "Who are you", "author": "yuyang", "genre": "Fiction", "PublishYear": 2020}
     print(client.CreateBook(Book))
-    print(client.GetBook("4"))
