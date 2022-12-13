@@ -1,0 +1,13 @@
+{
+  "details": {
+    "endpoint": "http://localhost:50051",
+    "methodFqn": "InventoryService.CreateBook"
+  },
+  "requests": [
+    {
+      "location": "CreateBook-request.json"
+    }
+  ],
+  "operationType": "unary",
+  "invokerName": "grpc"
+}

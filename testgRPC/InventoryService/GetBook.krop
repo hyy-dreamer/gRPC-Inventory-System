@@ -1,0 +1,13 @@
+{
+  "details": {
+    "endpoint": "http://localhost:50051",
+    "methodFqn": "InventoryService.GetBook"
+  },
+  "requests": [
+    {
+      "location": "GetBook-request.json"
+    }
+  ],
+  "operationType": "unary",
+  "invokerName": "grpc"
+}
