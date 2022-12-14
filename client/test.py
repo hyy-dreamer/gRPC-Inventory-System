@@ -14,5 +14,11 @@ class test(TestCase):
         getbook = Get_Book_Titles()
         ISBNs = ["1"]
         self.assertEqual(getbook.GetBookTilte(ISBNs), ["We are testing"])
+
+    def test_get_book_tilles_with_server(self):
+        getbook = Get_Book_Titles()
+        ISBNs = ["1"]
+        self.assertEqual(getbook.GetBookTilte(ISBNs), ["life is miserable"])
+
 if __name__ == "__main__":
     unittest.main()
